@@ -8,7 +8,7 @@ import discord
 
 #RETRIEVING TOKENS
 
-MY_TOKEN = "ODUxODYwMzUzMzQzMDI5Mjk5.YL-axw.PCL0UfyT0Lh4EqyH6kTPNeoofiw"
+MY_TOKEN = os.environ['api-token']
 SERVER = "NECSA"
 
 class NECSABot(discord.Client):
