@@ -6,7 +6,8 @@ from PIL import Image, ImageFont, ImageDraw
 import requests
 from cryptography.fernet import Fernet
 
-decryptKey = b'v-nEatjjfIAYhaVZLtlLS-yWuDa-QPYpFiRjKrr1SM4='
+decryptKey = os.environ['enc-key']
+decryptKey = str.encode(decryptKey[2:-1])
 fernet = Fernet(decryptKey)
 class warden:
 
